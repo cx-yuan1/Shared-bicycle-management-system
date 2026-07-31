@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+bike-sharing-frontend/node_modules/
+
+# Build output
+dist/
+bike-sharing-frontend/dist/
+build/
+bike-sharing-backend/target/
+
+# Runtime uploads and generated files
+upload/
+bike-sharing-backend/upload/
+uploads/
+bike-sharing-backend/uploads/
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+application-local.yml
+application-*.local.yml
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test and coverage output
+coverage/
+.nyc_output/

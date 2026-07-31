@@ -1,0 +1,186 @@
+/**
+ * 共享单车管理系统主题样式
+ * 主题色：奶白色
+ */
+
+:root {
+  /* 主题色 - 奶白色系 */
+  --primary-color: #FFF8DC;        /* 奶白色 */
+  --secondary-color: #F5F5DC;      /* 米色 */
+  --light-color: #FFFACD;          /* 柠檬绸色 */
+  --hover-color: #FFEFD5;          /* 番木瓜色 */
+  
+  /* 文字颜色 */
+  --text-color: #333333;           /* 深灰色文字 */
+  --text-secondary: #666666;       /* 次要文字 */
+  --text-light: #999999;           /* 浅色文字 */
+  
+  /* 边框颜色 */
+  --border-color: #E8E8E8;         /* 边框色 */
+  --border-light: #F0F0F0;         /* 浅边框色 */
+  
+  /* 背景颜色 */
+  --bg-color: #FFFFFF;             /* 白色背景 */
+  --bg-light: #FAFAFA;             /* 浅灰背景 */
+  
+  /* 功能色 */
+  --success-color: #67C23A;        /* 成功色 */
+  --warning-color: #E6A23C;        /* 警告色 */
+  --danger-color: #F56C6C;         /* 危险色 */
+  --info-color: #909399;           /* 信息色 */
+}
+
+/* Element-Plus 主题覆盖 */
+
+/* 按钮 */
+.el-button--primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--text-color) !important;
+}
+
+.el-button--primary:hover {
+  background-color: var(--hover-color) !important;
+  border-color: var(--hover-color) !important;
+}
+
+/* 表格 */
+.el-table {
+  background-color: var(--bg-color);
+}
+
+.el-table th.el-table__cell {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color);
+  text-align: center !important;
+  font-weight: bold;
+}
+
+.el-table td.el-table__cell {
+  text-align: center !important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: var(--bg-light);
+}
+
+.el-table__body tr:hover > td {
+  background-color: var(--light-color) !important;
+}
+
+/* 卡片 */
+.el-card {
+  border-color: var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.el-card__header {
+  background-color: var(--secondary-color);
+  border-bottom-color: var(--border-color);
+}
+
+/* 输入框 */
+.el-input__wrapper {
+  background-color: var(--bg-color);
+}
+
+.el-input__wrapper:hover {
+  box-shadow: 0 0 0 1px var(--primary-color) inset;
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--primary-color) inset;
+}
+
+/* 分页 */
+.el-pagination.is-background .el-pager li:not(.is-disabled).is-active {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.el-pagination.is-background .el-pager li:not(.is-disabled):hover {
+  color: var(--primary-color);
+}
+
+/* 菜单 */
+.el-menu {
+  background-color: var(--secondary-color);
+}
+
+.el-menu-item:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.el-menu-item.is-active {
+  background-color: var(--primary-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* 对话框 */
+.el-dialog__header {
+  background-color: var(--secondary-color);
+}
+
+/* 通用样式 */
+.page-container {
+  padding: 20px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.content-card {
+  margin-bottom: 20px;
+}
+
+/* 统计卡片 */
+.stat-card {
+  text-align: center;
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* 表单样式 */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮组 */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 搜索栏 */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
