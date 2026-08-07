@@ -2,7 +2,7 @@
 
 # 获取方式---本文件是项目的部分文件，有需要可看【煮页】
 
-# 联系🐧: 3660038549
+# 联系🐧: 3660038549（毕业设计-论文）
 
 <br>
 
@@ -67,75 +67,6 @@ IDEA 编译器：推荐使用 IntelliJ IDEA 导入后端项目
 8、实现故障报修管理，包括用户提交报修、图片上传、后台处理、维修结果记录；
 
 9、实现数据统计，后台可统计用户数量、车辆数量、订单数量、收入概览和车辆状态分布等核心业务数据。
-
-#### 前台启动方式
-
-1. 进入前端目录 `bike-sharing-frontend`。
-
-2. 安装前端依赖：
-
-```bash
-npm install
-```
-
-3. 启动前端开发服务：
-
-```bash
-npm run dev
-```
-
-4. 浏览器访问：`http://localhost:3000/`
-
-说明：前端开发环境已配置 Vite 代理，请求 `/api` 时会自动转发到本地后端 `http://localhost:8080`。
-
-#### 后台启动方式
-
-1. 创建数据库 `bike_sharing`。
-
-2. 导入数据库初始化脚本 `bike-sharing-backend/src/main/resources/db/init.sql`。
-
-```bash
-mysql -u root -p < bike-sharing-backend/src/main/resources/db/init.sql
-```
-
-3. 修改 `bike-sharing-backend/src/main/resources/application.yml` 中的 MySQL 连接配置：
-
-```yaml
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/bike_sharing?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
-    username: root
-    password: 123456
-```
-
-4. 使用 IDEA 打开后端项目，等待 Maven 依赖下载完成。
-
-5. 启动 `bike-sharing-backend/src/main/java/com/bikesharing/BikeShareApplication.java`。
-
-6. 健康检查访问：`http://localhost:8080/`
-
-也可以在命令行启动：
-
-```bash
-cd bike-sharing-backend
-mvn spring-boot:run
-```
-
-#### 默认账号
-
-[管理员]
-
-账号：`admin`
-
-密码：`123456`
-
-[普通用户]
-
-账号：`zhangsan`
-
-密码：`123456`
-
-也可使用初始化数据中的 `lisi`、`wangwu`、`zhaoliu`、`sunqi` 等普通用户账号，默认密码均为 `123456`。
 
 #### 主要访问地址
 
